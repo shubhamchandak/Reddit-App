@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.w10.reddit.MainActivity"
+android:paddingBottom="8dp"
+android:paddingLeft="8dp"
+android:paddingRight="8dp">
+
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp"
+    android:padding="8dp"
+    app:cardMaxElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/card_thumbnail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/card_thumbnail"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Title" />
+
+            <TextView
+                android:id="@+id/card_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Card Author" />
+
+            <TextView
+                android:id="@+id/card_updated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Updated" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/card_progressbar"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

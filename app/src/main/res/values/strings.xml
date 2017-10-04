@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Reddit</string>
+
+    // intent from MainActivity to CommentsActivity (key value)
+    <string name="post_title">postTitle</string>
+    <string name="post_author">postAuthor</string>
+    <string name="post_date_updated">postDateUpdated</string>
+    <string name="post_thumbnail_url">postThumbnailURL</string>
+    <string name="post_url">postURL</string>
+    <string name="post_id">postId</string>
+
+    <string name="session_username">com.example.w10.reddit.Account.SessionUsername</string>
+    <string name="session_modhash">com.example.w10.reddit.Account.SessionModhash</string>
+    <string name="session_cookie">com.example.w10.reddit.Account.SessionCookie</string>
+</resources>
